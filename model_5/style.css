@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* Сброс общих стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Основные стили для body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e7f9fd;
+  color: #034f84;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Шапка */
+header {
+  background-color: #17a2b8;
+}
+
+/* Логотип */
+.logo img {
+  max-width: 200px;
+}
+
+/* Главный контент */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  /* Обёртка для содержимого */
+}
+main .content {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  /* Блок .block */
+}
+main .content .block {
+  background-color: #fff;
+  border: 2px solid #17a2b8;
+  border-radius: 12px;
+  padding: 20px;
+  width: 30%;
+  max-width: 400px;
+  /* Картинка в блоке */
+  /* Текстовый блок */
+}
+main .content .block .image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+main .content .block .text-block h2 {
+  font-size: 24px;
+  color: #034f84;
+  margin-bottom: 10px;
+}
+main .content .block .text-block p {
+  font-size: 16px;
+  color: #034f84;
+}
+
+/* Секция подписки */
+.subscribe {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.subscribe .email-input {
+  padding: 12px;
+  width: 70%;
+  border: 1px solid #17a2b8;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #034f84;
+}
+.subscribe .subscribe-button {
+  padding: 12px 20px;
+  background-color: #17a2b8;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.subscribe .subscribe-button:hover {
+  background-color: rgba(3, 79, 132, 0.7);
+}
+
+/* Футер */
+footer {
+  background-color: #17a2b8;
+  padding: 20px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 8px;
+}
+footer .footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 10px;
+  max-width: 40%;
+  margin: 0 auto;
+}
+footer .footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-style: italic;
+  transition: color 0.3s;
+}
+footer .footer-links a:hover {
+  color: #e7f9fd;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .block {
+    width: 80%;
+  }
+  .logo img {
+    max-width: 150px;
+  }
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,232 @@
+$primary-color: #17a2b8
+$hover-color: #128293
+$main-bg: #e7f9fd
+$main-text-color: #034f84
+
+
+body
+  font-family: "Lexend Zetta", sans-serif
+  background-color: $main-bg
+  color: $main-text-color
+  margin: 0
+  padding: 0
+
+
+header
+  height: 80px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 5px 20px
+  background-color: $primary-color
+
+  .brand-logo
+    img
+      height: 80px
+
+
+.register-button
+  padding: 10px 20px
+  font-size: 16px
+  color: #fff
+  background-color: $primary-color
+  border: none
+  border-radius: 8px
+  cursor: pointer
+  transition: background-color 0.3s ease
+  margin: 20px auto
+
+  &:hover
+    background-color: $hover-color
+
+.intro
+  display: flex
+  justify-content: space-between
+  align-items: center
+  gap: 20px
+  padding: 20px
+
+  .intro-text
+    flex: 1
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+
+    h1
+      font-size: 28px
+      margin-bottom: 10px
+
+    p
+      font-size: 18px
+      line-height: 1.6
+      margin-bottom: 10px
+
+    .register-button
+      margin: 0
+      align-self: flex-start
+
+  .intro-image
+    flex: 1
+    display: flex
+    justify-content: center
+    align-items: center
+
+    img
+      max-width: 100%
+      height: auto
+      border-radius: 8px
+
+
+.features
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%87%D0%B0%D1%81%D1%82%D1%8C_%D1%83%D1%80%D0%BE%D1%87%D0%B8%D1%89%D0%B0_%D0%A8%D0%B8%D1%80%D0%BE%D0%BA%D0%B0%D1%8F_%D0%91%D0%B0%D0%BB%D0%BA%D0%B0.jpg/1200px-%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%87%D0%B0%D1%81%D1%82%D1%8C_%D1%83%D1%80%D0%BE%D1%87%D0%B8%D1%89%D0%B0_%D0%A8%D0%B8%D1%80%D0%BE%D0%BA%D0%B0%D1%8F_%D0%91%D0%B0%D0%BB%D0%BA%D0%B0.jpg")
+  background-size: cover
+  background-position: center
+  padding: 20px
+  border-radius: 8px
+  color: #fff
+  margin-top: 40px
+
+  h2
+    text-align: center
+    margin-bottom: 20px
+
+  .block
+    display: flex
+    flex-wrap: wrap
+    gap: 20px
+    justify-content: center
+    margin-bottom: 20px
+
+    .feature
+      flex: 1 1 300px
+      padding: 15px
+      background-color: rgba(3, 79, 132, 0.7)
+      border-radius: 8px
+
+      h3
+        font-size: 20px
+        margin-bottom: 10px
+
+      p
+        font-size: 16px
+        line-height: 1.5
+
+  .button-container
+    text-align: center
+
+
+.how-to
+  margin-top: 40px
+  text-align: center
+  padding: 20px
+
+  h2
+    margin-bottom: 20px
+    font-size: 28px
+
+  .block
+    display: flex
+    flex-wrap: wrap
+    gap: 20px
+    justify-content: center
+    margin-bottom: 20px
+
+    .step
+      flex: 1 1 180px
+      min-width: 180px
+      padding: 15px
+      background-color: #bde0fe
+      border-radius: 8px
+      text-align: center
+      transition: transform 0.3s ease, background-color 0.3s ease
+
+      &:hover
+        transform: scale(1.05)
+        background-color: #caf0f8
+
+      h3
+        font-size: 18px
+        margin-bottom: 10px
+        color: $main-text-color
+
+      p
+        font-size: 16px
+        line-height: 1.6
+
+
+.footer
+  display: flex
+  align-items: center
+  width: 100%
+  margin-top: 40px
+  padding: 20px
+  background-color: $primary-color
+  border-radius: 8px
+
+
+  .brand-logo
+    img
+      height: 80px
+
+  .footer-navigation
+    margin: 0 auto
+
+  .contact-table
+    text-align: center
+    border-spacing: 10px 15px
+
+    td
+      font-size: 16px
+      padding: 5px
+
+      a
+        text-decoration: none
+        color: #fff
+        transition: color 0.3s ease
+
+        &:hover
+          color: #bde0fe
+
+
+@media (max-width: 768px)
+  header
+    flex-direction: column
+    height: auto
+    gap: 20px
+    text-align: center
+
+  .intro
+    flex-direction: column
+    text-align: center
+
+    .intro-text
+      align-items: center
+
+      .register-button
+        align-self: center
+        margin-top: 10px
+
+    .intro-image
+      margin-top: 20px
+
+  .features
+    .block
+      flex-direction: column
+      align-items: stretch
+
+  .how-to
+    .block
+      flex-direction: column
+
+  footer
+    flex-direction: column
+    gap: 20px
+    text-align: center
+
+    .footer-content
+      flex-direction: column
+
+    .footer-left
+      margin-right: 0
+      margin-bottom: 20px

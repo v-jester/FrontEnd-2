@@ -1,0 +1,224 @@
+body {
+  font-family: "Lexend Zetta", sans-serif;
+  background-color: #e7f9fd;
+  color: #034f84;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: #17a2b8;
+}
+header .brand-logo img {
+  height: 80px;
+}
+
+.register-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #17a2b8;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 20px auto;
+}
+.register-button:hover {
+  background-color: #128293;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.intro .intro-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.intro .intro-text h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.intro .intro-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.intro .intro-text .register-button {
+  margin: 0;
+  align-self: flex-start;
+}
+.intro .intro-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro .intro-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.features {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%87%D0%B0%D1%81%D1%82%D1%8C_%D1%83%D1%80%D0%BE%D1%87%D0%B8%D1%89%D0%B0_%D0%A8%D0%B8%D1%80%D0%BE%D0%BA%D0%B0%D1%8F_%D0%91%D0%B0%D0%BB%D0%BA%D0%B0.jpg/1200px-%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%87%D0%B0%D1%81%D1%82%D1%8C_%D1%83%D1%80%D0%BE%D1%87%D0%B8%D1%89%D0%B0_%D0%A8%D0%B8%D1%80%D0%BE%D0%BA%D0%B0%D1%8F_%D0%91%D0%B0%D0%BB%D0%BA%D0%B0.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff;
+  margin-top: 40px;
+}
+.features h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.features .block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.features .block .feature {
+  flex: 1 1 300px;
+  padding: 15px;
+  background-color: rgba(3, 79, 132, 0.7);
+  border-radius: 8px;
+}
+.features .block .feature h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.features .block .feature p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.features .button-container {
+  text-align: center;
+}
+
+.how-to {
+  margin-top: 40px;
+  text-align: center;
+  padding: 20px;
+}
+.how-to h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+.how-to .block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.how-to .block .step {
+  flex: 1 1 180px;
+  min-width: 180px;
+  padding: 15px;
+  background-color: #bde0fe;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.how-to .block .step:hover {
+  transform: scale(1.05);
+  background-color: #caf0f8;
+}
+.how-to .block .step h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #034f84;
+}
+.how-to .block .step p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #17a2b8;
+  border-radius: 8px;
+}
+.footer .brand-logo img {
+  height: 80px;
+}
+.footer .footer-navigation {
+  margin: 0 auto;
+}
+.footer .contact-table {
+  text-align: center;
+  border-spacing: 10px 15px;
+}
+.footer .contact-table td {
+  font-size: 16px;
+  padding: 5px;
+}
+.footer .contact-table td a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+.footer .contact-table td a:hover {
+  color: #bde0fe;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    text-align: center;
+  }
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+  .intro .intro-text {
+    align-items: center;
+  }
+  .intro .intro-text .register-button {
+    align-self: center;
+    margin-top: 10px;
+  }
+  .intro .intro-image {
+    margin-top: 20px;
+  }
+  .features .block {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .how-to .block {
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  footer .footer-content {
+    flex-direction: column;
+  }
+  footer .footer-left {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
